@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="đăng ký.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="dangkyform">
+        <form name="contactform " onsubmit="return validataform() " action="# " method="post ">
+            <h2>Application Form</h2>
+            <div class="row ">
+                <label>Fullname</label>
+                <input type="text " name="name ">
+                <!-- ----error lỗi để trống-------  -->
+                <div class="error " id="nameerror "></div>
+
+            </div>
+            <div class="row ">
+                <label> Email address</label>
+                <input type="email " name="email ">
+                <!-- ----error lỗi để trống-------  -->
+                <div class="error " id="emailerror "></div>
+            </div>
+            <div class="row ">
+                <label> Number phone</label>
+                <input type="text " name="number ">
+                <!-- ----error lỗi để trống-------  -->
+                <div class="error " id="numbererror "></div>
+            </div>
+            <div class="row ">
+                <label>Contry</label>
+                <select name="contry ">
+    <option>select</option>
+    <option>Vietnamese</option>
+    <option>china</option>
+    <option>English</option>
+    <option>Japanese</option>
+    <option>American</option>
+     </select>
+                <div class="error " id="contryerror "></div>
+            </div>
+            <div class="row ">
+                <label>Gender</label>
+                <div class="form-inline ">
+                    <label><input type="radio " name="gender " value="male ">Male</label>
+                    <label><input type="radio " name="gender " value="Female ">Female</label>
+
+                </div>
+                <div class="error " id="gendererror "></div>
+            </div>
+            <div class="row ">
+                <label>Hobbies</label>
+                <div class="form-inline ">
+                    <label><input type="checkbox " name="hobbise " value="Sport ">Sport</label>
+                    <label><input type="checkbox " name="hobbise " value="Travel ">Travel</label>
+
+                </div>
+            </div>
+            <div class="row ">
+                <input type="submit " value="Đăn ký ">
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
